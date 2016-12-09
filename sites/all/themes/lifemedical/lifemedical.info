@@ -10,6 +10,8 @@ base theme = bootstrap
 
 regions[navigation]     = 'Navigation'
 regions[header]         = 'Top Bar'
+regions[top_left]       = 'Top Left'
+regions[top_right]      = 'Top Right'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[content]        = 'Content'
