@@ -24,6 +24,7 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
+stylesheets[all][] = fontsless/font-awesome.less
 stylesheets[all][] = less/style.less
 
 
