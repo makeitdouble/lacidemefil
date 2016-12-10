@@ -24,7 +24,7 @@ a.wysiwyg-statusbar {font-family: Arial; font-size: 9px; color: #000000; text-de
 a.wysiwyg-statusbar:hover {font-family: Arial; font-size: 9px; color: #000000; text-decoration:underline;}
 
 /* Font Type and Size Drop Down */
-.dropdown          { background-color: #FFFFFF; border: 1px solid #333333; height: 140px; overflow: auto; padding: 1px;}
+/*.dropdown          { background-color: #FFFFFF; border: 1px solid #333333; height: 140px; overflow: auto; padding: 1px;}*/
 button.mouseOver   { background-color: #EEEEEE; border: 1px solid #CCCCCC; padding: 3px; cursor: default; text-align: left;}
 button.mouseOut    { background-color: #FFFFFF; border: 1px solid #FFFFFF; padding: 3px; cursor: default; text-align: left;}
 
