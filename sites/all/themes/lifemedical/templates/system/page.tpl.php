@@ -117,9 +117,11 @@
     <?php if (drupal_is_front_page()): ?>
       <div class="home-header">
         <div class="row">
-          <div class="col-sm-3"><?php print render($page['header_left']); ?></div>
-          <div class="col-sm-6"><?php print render($page['header_center']); ?></div>
-          <div class="col-sm-3"><?php print render($page['header_right']); ?></div>
+          <div class="row-height">
+            <div class="col-sm-3 col-sm-height col-sm-middle"><?php print render($page['header_left']); ?></div>
+            <div class="col-sm-6 col-sm-height col-sm-middle"><?php print render($page['header_center']); ?></div>
+            <div class="col-sm-3 col-sm-height col-sm-middle"><?php print render($page['header_right']); ?></div>
+          </div>
         </div>
       </div>
     <?php endif; ?>
