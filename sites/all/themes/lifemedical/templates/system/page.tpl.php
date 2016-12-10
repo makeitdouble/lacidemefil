@@ -113,20 +113,20 @@
         <?php print render($page['top_right']); ?>
       </div>
     </div>
-
-    <?php if (drupal_is_front_page()): ?>
-      <div class="home-header">
-        <div class="row">
-          <div class="row-height">
-            <div class="col-sm-3 col-sm-height col-sm-middle"><?php print render($page['header_left']); ?></div>
-            <div class="col-sm-6 col-sm-height col-sm-middle"><?php print render($page['header_center']); ?></div>
-            <div class="col-sm-3 col-sm-height col-sm-middle"><?php print render($page['header_right']); ?></div>
-          </div>
-        </div>
-      </div>
-    <?php endif; ?>
   </div>
 </header>
+
+<?php if (drupal_is_front_page()): ?>
+  <div class="home-header <?php print $container_class; ?>">
+    <div class="row">
+      <div class="row-height">
+        <div class="col-sm-3 col-sm-height col-sm-middle"><?php print render($page['header_left']); ?></div>
+        <div class="col-sm-6 col-sm-height col-sm-middle"><?php print render($page['header_center']); ?></div>
+        <div class="col-sm-3 col-sm-height col-sm-middle"><?php print render($page['header_right']); ?></div>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>
 
 <div class="main-container <?php print $container_class; ?>">
 
