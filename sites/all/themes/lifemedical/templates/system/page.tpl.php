@@ -177,8 +177,8 @@
       </a>
       <?php print render($page['footer1']); ?>
     </div>
-    <div class="col-sm-4"><?php print render($page['footer2']); ?></div>
+    <div class="col-sm-5"><?php print render($page['footer2']); ?></div>
     <div class="col-sm-2"><?php print render($page['footer3']); ?></div>
-    <div class="col-sm-3"><?php print render($page['footer4']); ?></div>
+    <div class="col-sm-2"><?php print render($page['footer4']); ?></div>
   </div>
 </footer>
