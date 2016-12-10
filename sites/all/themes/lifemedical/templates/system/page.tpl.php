@@ -180,7 +180,7 @@
   <div class="row">
     <div class="col-sm-3">
       <a class="logo" href="<?php print $front_page; ?>" title="<?php print t('Дела сердечные'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Дела сердечные'); ?>" />
+        <img src="<?php print $logo; ?>" alt="<?php print t('Дела сердечные'); ?>" class="img-responsive" />
       </a>
       <?php print render($page['footer1']); ?>
     </div>
