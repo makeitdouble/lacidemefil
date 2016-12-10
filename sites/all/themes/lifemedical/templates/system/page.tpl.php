@@ -110,7 +110,9 @@
           </div>
         <?php endif; ?>
       </div>
-      <div class="col-sm-2"><?php print render($page['top_right']); ?></div>
+      <div class="col-sm-2">
+        <?php print render($page['top_right']); ?>
+      </div>
     </div>
   </div>
 </header>
@@ -169,7 +171,12 @@
 <footer class="footer <?php print $container_class; ?>">
   <?php print render($page['footer']); ?>
   <div class="row">
-    <div class="col-sm-3"><?php print render($page['footer1']); ?></div>
+    <div class="col-sm-3">
+      <a class="logo" href="<?php print $front_page; ?>" title="<?php print t('Дела сердечные'); ?>">
+        <img src="<?php print $logo; ?>" alt="<?php print t('Дела сердечные'); ?>" />
+      </a>
+      <?php print render($page['footer1']); ?>
+    </div>
     <div class="col-sm-4"><?php print render($page['footer2']); ?></div>
     <div class="col-sm-2"><?php print render($page['footer3']); ?></div>
     <div class="col-sm-3"><?php print render($page['footer4']); ?></div>
