@@ -114,7 +114,7 @@
       </div>
     </div>
 
-    <?php if (isset($is_front_page)): ?>
+    <?php if (drupal_is_front_page()): ?>
       <div class="home-header">
         <div class="row">
           <div class="col-sm-3"><?php print render($page['header_left']); ?></div>
