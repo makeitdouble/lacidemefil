@@ -113,24 +113,23 @@
         <?php print render($page['top_right']); ?>
       </div>
     </div>
+
+    <?php if (isset($is_front_page)): ?>
+      <div class="home-header">
+        <div class="row">
+          <div class="col-sm-3"><?php print render($page['header_left']); ?></div>
+          <div class="col-sm-6"><?php print render($page['header_center']); ?></div>
+          <div class="col-sm-3"><?php print render($page['header_right']); ?></div>
+        </div>
+      </div>
+    <?php endif; ?>
   </div>
 </header>
 
 <div class="main-container <?php print $container_class; ?>">
 
   <header role="banner" id="page-header">
-
-    <?php if (isset($is_front_page)): ?>
-        <div class="home-header">
-          <div class="row">
-            <div class="col-sm-3"><?php print render($page['header_left']); ?></div>
-            <div class="col-sm-6"><?php print render($page['header']); ?></div>
-            <div class="col-sm-3"><?php print render($page['header_right']); ?></div>
-          </div>
-        </div>
-    <?php else: ?>
       <?php print render($page['header']); ?>
-    <?php endif; ?>
   </header> <!-- /#page-header -->
 
   <div class="row">
