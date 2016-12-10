@@ -76,7 +76,6 @@
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
-
       <?php if (!empty($site_name)): ?>
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
@@ -120,11 +119,18 @@
 <div class="main-container <?php print $container_class; ?>">
 
   <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
 
-    <?php print render($page['header']); ?>
+    <?php if (isset($is_front_page)): ?>
+        <div class="home-header">
+          <div class="row">
+            <div class="col-sm-3"><?php print render($page['header_left']); ?></div>
+            <div class="col-sm-6"><?php print render($page['header']); ?></div>
+            <div class="col-sm-3"><?php print render($page['header_right']); ?></div>
+          </div>
+        </div>
+    <?php else: ?>
+      <?php print render($page['header']); ?>
+    <?php endif; ?>
   </header> <!-- /#page-header -->
 
   <div class="row">
