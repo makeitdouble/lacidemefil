@@ -91,7 +91,7 @@
     <span class="submitted">
       <?php print $user_picture; ?>
       <?php if ($submitted) { 
-		echo date( "j d Y",$node->created);  
+		echo date( "d m Y",$node->created);  
 		} ?>
     </span>
     <?php endif; ?>
