@@ -27,6 +27,8 @@ regions[footer3]        = 'Footer3'
 regions[footer4]        = 'Footer4'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
+regions[home_bottom_l]  = 'Home bottom Left'
+regions[home_bottom_r]  = 'Home bottom Right'
 
 
 ;;;;;;;;;;;;;;;;;;;;;
