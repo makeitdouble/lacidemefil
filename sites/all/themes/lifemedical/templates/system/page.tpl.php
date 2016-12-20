@@ -131,7 +131,7 @@
 <div class="main-container <?php print $container_class; ?>">
 
   <header role="banner" id="page-header">
-      <?php print render($page['header']); ?>
+    <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
   <div class="row">
@@ -164,6 +164,16 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
+      <?php if (drupal_is_front_page()): ?>
+        <div class="home-bottom <?php print $container_class; ?>">
+          <div class="row">
+            <div class="row-height">
+              <div class="col-sm-6 col-sm-height col-sm-middle"><?php print render($page['home_bottom_l']); ?></div>
+              <div class="col-sm-6 col-sm-height col-sm-middle"><?php print render($page['home_bottom_r']); ?></div>
+            </div>
+          </div>
+        </div>
+      <?php endif; ?>
     </section>
 
     <?php if (!empty($page['sidebar_second'])): ?>
